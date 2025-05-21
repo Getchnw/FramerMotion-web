@@ -23,7 +23,7 @@ const Form = () => {
         <div className="space-y-3 lg:w-[500px]">
             <motion.h1 
             initial = {{opacity:0 , y:100 }}
-            animate = {{opacity:1 , y:0}}
+            whileInView = {{opacity:1 , y:0}}
             transition={{
                 type : "spring",
                 stiffness : 100,
@@ -35,7 +35,7 @@ const Form = () => {
             </motion.h1>
             <motion.div 
             initial = {{opacity:0 , y:100 }}
-            animate = {{opacity:1 , y:0}}
+            whileInView = {{opacity:1 , y:0}}
             transition={{
                 type : "spring",
                 stiffness : 100,
@@ -58,7 +58,7 @@ const Form = () => {
             </motion.div>
             <motion.div 
             initial = {{opacity:0 , y:100 }}
-            animate = {{opacity:1 , y:0}}
+            whileInView = {{opacity:1 , y:0}}
             transition={{
                 type : "spring",
                 stiffness : 100,
@@ -81,7 +81,7 @@ const Form = () => {
             </motion.div>
             <motion.button 
             initial = {{opacity:0 , y:100 }}
-            animate = {{opacity:1 , y:0}}
+            whileInView = {{opacity:1 , y:0}}
             transition={{
                 type : "spring",
                 stiffness : 100,
@@ -102,7 +102,7 @@ const Gps = () => {
         <>
         <motion.div 
         initial = {{opacity:0 , scale:0.5 }}
-            animate = {{opacity:1 , scale:1}}
+            whileInView = {{opacity:1 , scale:1}}
             transition={{
                 type : "spring",
                 stiffness : 100,

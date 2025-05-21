@@ -25,7 +25,7 @@ const Bander = () => {
 
             <motion.div
             initial = {{opacity:0 , scale:0.5}}
-            animate = {{opacity:1 , scale:1}}
+            whileInView = {{opacity:1 , scale:1}}
             transition={{
                 type : 'spring',
                 stiffness : 100,
@@ -41,7 +41,7 @@ const Bander = () => {
                     <div className="max-w-xl space-y-4 lg:space-y-6">
                         <motion.h1 
                         initial = {{opacity:0 , scale:0.5}}
-                        animate = {{opacity:1 , scale:1}}
+                        whileInView = {{opacity:1 , scale:1}}
                         transition={{
                             type : 'spring',
                             stiffness : 100,
@@ -51,7 +51,7 @@ const Bander = () => {
                         className="text-xl sm:text-3xl font-semibold text-center">Download the app</motion.h1>
                         <motion.p 
                         initial = {{opacity:0 , scale:0.5}}
-                        animate = {{opacity:1 , scale:1}}
+                        whileInView = {{opacity:1 , scale:1}}
                         transition={{
                             type : 'spring',
                             stiffness : 100,
@@ -68,7 +68,7 @@ const Bander = () => {
                             >
                                 <MotionImg 
                                 initial = {{opacity:0 , y:100}}
-                                animate = {{opacity:1 , y:0}}
+                                whileInView = {{opacity:1 , y:0}}
                                 transition={{
                                     type : 'spring',
                                     stiffness : 100,
@@ -87,7 +87,7 @@ const Bander = () => {
                             >
                                 <MotionImg 
                                 initial = {{opacity:0 , y:100}}
-                                animate = {{opacity:1 , y:0}}
+                                whileInView = {{opacity:1 , y:0}}
                                 transition={{
                                     type : 'spring',
                                     stiffness : 100,
