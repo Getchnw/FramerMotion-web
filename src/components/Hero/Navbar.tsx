@@ -2,7 +2,7 @@
 import { GiHamburgerMenu } from "react-icons/gi"
 import { motion,AnimatePresence } from "framer-motion"
 import { useState } from "react"
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa"
+import { FaFacebookF, FaInstagram } from "react-icons/fa"
 import { FaX } from "react-icons/fa6"
 
 

@@ -10,13 +10,10 @@ import { FaMapLocation
  } from 'react-icons/fa6';
 import {motion} from 'framer-motion';
 import Image from 'next/image';
-import { constants } from 'node:fs/promises';
-import { div } from 'framer-motion/client';
 
 const CreditCardIMG = '/assets/creditCard.png';
     const Scbimg = '/assets/scb.png';
     const Kbankimg = '/assets/kbank.png';
-    const Visaimg = '/assets/Visa.png'
 
 const Footer = () => {
     

@@ -1,6 +1,5 @@
 "use client"
 import { motion } from "framer-motion"
-import { useState , useEffect } from "react"
 import Image from "next/image"
 
 interface ProductType {
@@ -33,7 +32,6 @@ const Product = () => {
         },
         
     ]
-    const [current, setCurrent] = useState(0);
 
 
   return (
@@ -96,10 +94,10 @@ function Header() {
 }
 
 interface CardType {
-   product : ProductType; 
+   product : ProductType[]; 
 }
 
-function Card( {product} : {product:CardType}) {
+function Card( {product} : CardType) {
     return (
         <>
             <motion.div 
@@ -119,7 +117,7 @@ function Card( {product} : {product:CardType}) {
                         className="flex flex-col items-center justify-center border rounded-2xl p-4 shadow-2xl border-white/50"
                         >
                             <Image 
-                            className="img-shadow2 max-w-[200px]  hover:scale-115 transition-all duration-300 curser-pointer"
+                            className="img-shadow2 max-w-[200px]  hover:scale-115 transition-all duration-300 cursor-pointer"
                             src = {item.image}
                             alt = {item.title}
                             width = {200}

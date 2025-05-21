@@ -3,8 +3,7 @@ import BgImage from '../../../public/assets/bg-slate.png'
 import BlackCoffee from '../../../public/assets/black.png'
 import Image from 'next/image'
 import Navbar from './Navbar'
-import { motion , AnimatePresence } from 'framer-motion'
-import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 const Hero = () => {
     const bgImage = {
