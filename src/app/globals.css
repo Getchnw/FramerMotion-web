@@ -5,11 +5,19 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding-default);
+  padding-right: var(--container-padding-default);
+
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: var(--container-padding-sm);
+    padding-right: var(--container-padding-sm);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +27,42 @@
   }
 }
 
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-kanit);
 }
+
+@theme {
+   /* add เพิ่ม */
+   --color-primary: #f19509;
+   --color-primary-dark: #e86f00;
+   --color-light-orange: #f1dabf;
+   --color-dark-gray: #1a1f25;
+   --color-light-gray: #272c35;
+  
+   --container-padding-default: 1rem;
+   --container-padding-sm: 2rem;
+ }
+
+
+@layer utilities {
+  .img-shadow {
+    filter: drop-shadow(40px 50px 25px #0f1115)
+  }
+
+  .img-shadow2 {
+    filter: drop-shadow(10px 30px 25px #0f1115)
+  }
+
+  .input-style {
+    @apply px-4 py-2 rounded-md
+     text-gray-400 
+  }
+
+  .btn-style {
+    @apply px-4 py-2 text-white rounded-md bg-primary 
+    hover:scale-105 transition duration-100
+  }
+}
+
+
